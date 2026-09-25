@@ -18,6 +18,8 @@ Python-пакет `toolkit` с CLI на Typer: калькулятор арифм
   
     source .venv/bin/activate
 
+  Установка пакетов:
+  
     python -m pip install --upgrade pip
     python -m pip install -e .
     python -m pip install pytest ruff
@@ -38,29 +40,25 @@ Python-пакет `toolkit` с CLI на Typer: калькулятор арифм
 
 Структура проекта:
 
-lab_01/
-├── pyproject.toml
-├── README.md
-├── src/
-│   └── toolkit/
-│       ├── __init__.py
-│       ├── __main__.py
-│       ├── tokenization.py
-│       ├── validation.py
-│       ├── calculation.py
-│       ├── converter.py
-│       └── errors.py
-└── tests/
-    ├── test_calculator.py
-    ├── test_converter.py
-    └── test_cli.py
+lab_01/                                                                                              
+├── pyproject.toml                                                                                   
+├── README.md                                                                                        
+├── src/                                                                                             
+│   └── toolkit/                                                                                     
+│       ├── __init__.py                                                                              
+│       ├── __main__.py                                                                              
+│       ├── tokenization.py                                                                          
+│       ├── validation.py                                                                            
+│       ├── calculation.py                                                                           
+│       ├── converter.py                                                                             
+│       └── errors.py                                                                                
+└── tests/                                                                                           
+    ├── test_calculator.py                                                                           
+    ├── test_converter.py                                                                            
+    └── test_cli.py                                                                                  
 
 Тесты:
-
-  python -m pytest
-  
-  python -m pytest tests/test_calculator.py
-  
-  python -m pytest tests/test_converter.py
-  
-  python -m pytest tests/test_cli.py
+ python -m pytest
+ python -m pytest tests/test_calculator.py
+ python -m pytest tests/test_converter.py
+ python -m pytest tests/test_cli.py
