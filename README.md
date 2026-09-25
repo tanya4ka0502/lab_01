@@ -6,11 +6,16 @@ Python-пакет `toolkit` с CLI на Typer: калькулятор арифм
  - Terminal
    
 Установка:
+
     cd lab_01
     python -m venv .venv
+    
   Windows PowerShell:
+  
     .venv\Scripts\Activate.ps1
+    
   Linux/macOS:
+  
     source .venv/bin/activate
 
     python -m pip install --upgrade pip
@@ -18,17 +23,21 @@ Python-пакет `toolkit` с CLI на Typer: калькулятор арифм
     python -m pip install pytest ruff
    
 Быстрый старт:
+
     python -m toolkit calc "2 + 2 * 2"
     python -m toolkit convert 1 --from m --to cm
     python -m toolkit --help
 
 Калькулятор:
+
     python -m toolkit calc "EXPRESSION"
 
 Конвертер:
+
     python -m toolkit convert VALUE --from UNIT --to UNIT
 
 Структура проекта:
+
 lab_01/
 ├── pyproject.toml
 ├── README.md
@@ -47,6 +56,7 @@ lab_01/
     └── test_cli.py
 
 Тесты:
+
   python -m pytest
   python -m pytest tests/test_calculator.py
   python -m pytest tests/test_converter.py
