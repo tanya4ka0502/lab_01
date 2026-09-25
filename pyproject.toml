@@ -1,8 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "labs"
+name = "toolkit"
 version = "0.1.0"
-description = "Add your description here"
-requires-python = ">=3.12"
+description = "Console toolkit with calculator and unit converter"
+readme = "README.md"
+requires-python = ">=3.10"
 dependencies = [
-    "pytest>=8.4.2",
+    "typer>=0.12",
 ]
+
+[project.scripts]
+toolkit = "toolkit.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
