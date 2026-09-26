@@ -58,6 +58,7 @@ lab_01/
     └── test_cli.py                                                                                  
 
 Тесты:
+
    python -m pytest
    python -m pytest tests/test_calculator.py
    python -m pytest tests/test_converter.py
